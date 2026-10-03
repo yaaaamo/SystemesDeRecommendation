@@ -2,9 +2,6 @@
 
 Recommandation de dépôts GitHub à partir des étoiles données par les utilisateurs. Ce projet compare une **baseline par popularité** à un **filtrage collaboratif basé sur les objets** (item-based collaborative filtering), évalués avec Precision@K, Recall@K et F1@K.
 
-> TP du module **IA pour le Génie Logiciel** — Master 2 Informatique, parcours Génie Logiciel, Université de Montpellier.
-> Enseignante : Imen Ben Sassi.
-
 **Auteures :** Yagmur AYDEMIR, Liza BOUROUINA
 
 ---
@@ -20,18 +17,10 @@ Le filtrage item-based multiplie le F1 par **7 à 15** selon K, et recommande **
 
 ---
 
-## Contenu du dépôt
-
-```
-.
-├── TP_IA_GL_Popularity_based_RS.ipynb   # Notebook complet (code commenté + résultats + analyse)
-├── slides/                              # Support de présentation
-└── README.md
-```
 
 ## Données
 
-Les données sont une extraction GitHub fournie avec l'énoncé du TP :
+Les données sont une extraction GitHub fournie avec l'énoncé :
 
 | Fichier | Contenu |
 | --- | --- |
@@ -41,7 +30,7 @@ Les données sont une extraction GitHub fournie avec l'énoncé du TP :
 
 Après nettoyage : **13 407 interactions**, **932 dépôts**, **901 utilisateurs**.
 
-> Les fichiers CSV ne sont pas inclus dans ce dépôt. Placez-les dans votre Google Drive (`MyDrive/`) ou adaptez les chemins dans la cellule de chargement.
+Placez les fichiers CSV dans votre Google Drive (`MyDrive/`) ou adaptez les chemins dans la cellule de chargement.
 
 ## Exécution
 
@@ -50,15 +39,6 @@ Après nettoyage : **13 407 interactions**, **932 dépôts**, **901 utilisateurs
 1. Ouvrir le notebook dans Colab.
 2. Déposer les trois fichiers CSV à la racine de `MyDrive`.
 3. *Exécution → Tout exécuter*.
-
-**En local**
-
-```bash
-pip install pandas numpy scikit-learn jupyter
-jupyter notebook TP_IA_GL_Popularity_based_RS.ipynb
-```
-
-Supprimer la cellule `drive.mount(...)` et remplacer les chemins `/content/drive/MyDrive/...` par ceux de vos fichiers.
 
 ---
 
